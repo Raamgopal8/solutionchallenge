@@ -74,3 +74,23 @@ a {
 a:hover {
     text-decoration: underline;
 }
+body 
+{
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+#currentValue {
+    font-size: 24px;
+    margin-top: 20px;
+}

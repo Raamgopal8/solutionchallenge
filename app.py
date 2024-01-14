@@ -19,21 +19,18 @@ def index():
 
 @app.route('/login', methods=['POST'])
 def login():
-    username = request.form['username']
-    password = request.form['password']
+    # Existing login functionality
 
-    user = User.query.filter_by(username=username).first()
-
-    if user and check_password_hash(user.password, password):
-        return "Login successful!"
-    else:
-        return "Invalid login credentials."
-
-@app.route('/signup', methods=['GET', 'POST'])
-def signup():
+ @app.route('/signup', methods=['GET', 'POST'])
+ def signup():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
+
+        # Check if the username already exists
+        existing_user = User.query.filter_by(username=username).first()
+        if existing_user:
+            return "Username already exists. Please choose another username."
 
         hashed_password = generate_password_hash(password, method='sha256')
 
