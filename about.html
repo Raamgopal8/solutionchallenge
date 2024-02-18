@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "with=device-width, initial-scale = 1.0">
+        <title> ABOUT </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <style>
+        html{
+            height: 100%;
+
+        }
+        .about{
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/about.png);
+    background-size: cover;
+    text-align: center;
+    position: relative;
+
+}
+
+.about h1{
+    font-size:36px;
+    font-weight:600;
+    text-align: center;
+    color: white;
+}
+.about h3{
+    text-align: center;
+    color: white;
+}
+.about p{
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    font-weight:300;
+    line-height:22px;
+    padding: 10px;
+}
+#backButton {
+            position: fixed;
+            left: 10px;
+            top: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+    </head>
+    <body>
+        <section class = "about">
+            <div class="about">
+            <h1> ABOUT US </h1>
+            <h3> Over past years we are trying to make Clean Energy At Affordable. </h3>
+            <h3> OUR VISION.</h3>
+            <p> we are an active engaging people about the clean energy and it availablities.making an effective use and also an proper utilisation in society.
+             Welcome to Energy Assistant, where innovation, sustainability, and empowerment converge to redefine the way we engage with energy. At Energy Assistant, our mission is to usher in a new era of conscientious energy consumption by seamlessly integrating advanced technology and renewable solutions. 
+    
+                Our platform serves as a comprehensive energy companion, providing users with real-time insights, personalized recommendations, and a holistic understanding of their energy usage. We understand that each individual and business has unique needs and environmental goals. Therefore, our team of experts has meticulously designed Energy Assistant to cater to diverse requirements, from optimizing energy efficiency to seamlessly integrating renewable sources into daily operations.
+                
+                With a user-friendly interface, our virtual guide assists clients in making informed decisions, helping them reduce their carbon footprint and achieve long-term sustainability goals. Whether you're a homeowner looking to enhance energy efficiency or a business aiming to transition to renewable energy sources, Energy Assistant is here to guide you every step of the way.
+                
+                At the core of our values is a commitment to environmental stewardship. We believe in fostering a global community that prioritizes sustainability, and our platform reflects this dedication by promoting eco-friendly practices and reducing reliance on non-renewable resources.
+                
+                As we navigate the ever-evolving landscape of energy consumption, Energy Assistant remains at the forefront of innovation. Our vision extends beyond just managing energy usage; we aspire to empower individuals and businesses to become active contributors to a cleaner, greener planet. Join us on this transformative journey towards a sustainable and resilient future, where Energy Assistant is not just a tool but a partner in building a brighter and eco-friendly world.</p>
+            
+            </div>
+            </section>
+            <button id="backButton" onclick="goBack()">Back</button>
+
+            <!-- Your page content goes here -->
+        
+            <script>
+                function goBack() {
+                    window.history.back();
+                }
+            </script>
+        </body>
+</html>

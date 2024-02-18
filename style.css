@@ -6,7 +6,7 @@
 .header{
     min-height: 100vh;
     width:100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://stellarfoodforthought.net/wp-content/uploads/2023/05/5-Energy-Conservation-Strategies-WP.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/home.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -118,60 +118,13 @@ nav img
         padding: 30px;
     }
 }
-<!----------about--------->
-
-.ABOUT{
-    width:80%;
-    margin:auto;
-    text-align: center;
-    padding-top: 100px;
-}
-h1{
-    font-size:36px;
-    font-weight:600;
-}
-p{
-    color:black;
-    font-size:22px;
-    font-weight:300;
-    line-height:22px;
-    padding: 10px;
-}
-
-<!-------------blog----------->
-.BLOG{
-    width:80%;
-    margin:auto;
-    text-align: center;
-    padding-top: 100px;
-}
-h1{
-    font-size:36px;
-    font-weight:600;
-}
-p{
-    color:black;
-    font-size:22px;
-    font-weight:300;
-    line-height:22px;
-    padding: 10px;
-}
-
-<!----------COMMENT--------->
-.COMMENT{
-    width:80%;
-    margin:auto;
-    text-align: center;
-    padding-top: 100px;
-}
-h1{
-    font-size:36px;
-    font-weight:600;
-}
-p{
-    color:black;
-    font-size:22px;
-    font-weight:300;
-    line-height:22px;
-    padding: 10px;
+footer{
+    text-align:center;
+    background-image: url(image/home.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: black;
+    font-size: larger;
 }

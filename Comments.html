@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "with=device-width, initial-scale = 1.0">
+        <title> Comments</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+
+    <style>
+        html{
+            height: 100%;
+        }
+        .Comments{
+            min-height: 100vh;
+            width:100%;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/comments.png);
+            background-size: cover;
+            text-align: center;
+            position: relative;
+         }
+        .Comments h1{
+            font-size:36px;
+            font-weight:600;
+            text-align: center;
+            color: white;
+         }
+        .Comments p{
+            color:white;
+            font-size: 20px;
+            text-align: center;
+            font-weight:300;
+            line-height:22px;
+            padding: 10px;
+
+        }
+        #backButton {
+            position: fixed;
+            left: 10px;
+            top: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+    </style>
+    </head>
+    <body>
+        <section class="Comments">
+            <div class="Comments">
+            <h1> COMMENTS. </h1>
+            <P> HERE IS AN COMMENT SECTION FOR THE DISCUSSION.</P>
+            </div>
+        </section>
+        <button id="backButton" onclick="goBack()">Back</button>
+
+        <!-- Your page content goes here -->
+    
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+        <h2>Leave your comments below:</h2>
+    
+    <form action="save_comment.php" method="post" id="commentForm">
+        <label for="username">Your Name:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="comment">Your Comment:</label>
+        <textarea id="comment" name="comment" rows="4" required></textarea>
+
+        <button type="submit">Submit Comment</button>
+    </form>
+
+    <div id="commentsSection">
+        <?php include 'get_comments.php'; ?>
+    </div>
+    </body>
+</html>
